@@ -1,0 +1,60 @@
+#access {
+    background-color: $light;
+    height: 757px;
+    @include tab {
+        height: 540px;
+    }
+    @include sp {
+        height: 710px;
+        background: linear-gradient(180deg,$light 0px,$light 350px,$dark 350px,$dark 647px,$light 647px,$light 710px);
+    }
+}
+
+#access .wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark;
+    height: 396px;
+    @include sp {
+        padding-top: 50px;
+        background-color: transparent
+    }
+}
+
+
+
+.adress {
+    font-size: 1.6rem;
+    color: #ffffff;
+    width: 40%;
+    margin-left: 7.9%;
+    padding: 100px;
+    text-align: left;
+    @include sp {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 160px;
+    }
+}
+.adress th {
+    padding-top: 101px;
+    font-size: 2.4rem;
+    color: #00000038;
+}
+
+.adress td {
+    padding-top: 30px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    height: fit-content;
+}
+
+.map {
+    width: 60%;
+    border: none;
+    @include sp {
+        position: absolute;
+        width: 100%;
+        height: 231px;
+    }
+}

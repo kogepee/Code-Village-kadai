@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 68px;
+    padding-left: 77px;
+    position: absolute;
+    z-index: 10;
+    @include tab {
+        background-color: white;
+        padding: 24px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+}
+a:hover {
+    color: black;
+}
+
+.hd-logo {
+    font-size: 3.8rem;
+    font-weight: bold;
+    @include tab {
+        font-size: 22px;
+    }
+}
+
+nav {
+    @include tab {
+        display: none;
+    }
+}
+
+.pc-navmenu ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    li {
+        margin-left: 15px;
+        color: #707070;
+        }
+    }
+
+.hd-menu {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.ham {
+    display: none;
+    @include tab {
+        width: 16px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: #000000;
+            &:last-child {
+                width: 8px;
+            }
+        }
+    }
+}
