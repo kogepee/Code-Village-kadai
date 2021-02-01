@@ -117,10 +117,14 @@ button {
 }
 
 /*# sourceMappingURL=reset.css.map */
+.body-wrap {
+  overflow: hidden;
+}
+
 html {
   font-size: 62.5%;
-  max-width: 1282px;
   margin: 0 auto;
+  max-width: inherit;
 }
 
 .title {
@@ -134,6 +138,7 @@ html {
   font-size: 2.4rem;
   margin-top: 256px;
   margin-left: 107px;
+  margin-bottom: 11px;
   font-style: Roboto;
   font-weight: normal;
   display: flex;
@@ -408,6 +413,7 @@ a:hover {
     background-size: cover;
     margin-right: 0%;
     padding: 18px 21px 64px;
+    width: auto;
   }
 }
 
@@ -462,6 +468,7 @@ a:hover {
 @media screen and (max-width: 959px) {
   #access {
     height: 540px;
+    margin-top: 90px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -526,26 +533,53 @@ a:hover {
 }
 
 footer {
-  width: 100%;
   height: 342px;
 }
 @media screen and (max-width: 600px) {
   footer {
     height: 260px;
+    margin: 0 8.3%;
+  }
+}
+
+.ft-line {
+  display: inline-block;
+  content: "";
+  border-bottom: 1px solid #70707036;
+  width: 83%;
+  height: 164px;
+  margin: 0 8.3%;
+}
+@media screen and (max-width: 600px) {
+  .ft-line {
+    height: 63px;
   }
 }
 
 .ft-wrap {
   display: flex;
   text-align: center;
-  padding: 84px 8% 0;
-  position: relative;
+  justify-content: space-between;
+  margin: 83px 8.3% 0;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
   .ft-wrap {
-    padding: 0%;
-    padding: 150px 1.6% 19px;
-    justify-content: space-between;
+    height: 196px;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+}
+
+.name-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .name-wrap {
+    width: 89%;
+    padding-bottom: 19px;
   }
 }
 
@@ -554,11 +588,11 @@ footer {
   height: 32px;
   font-size: 32px;
   color: #7070704D;
-  margin-right: 2%;
+  text-align: start;
 }
 @media screen and (max-width: 600px) {
   .ft-name {
-    width: 43.4%;
+    width: auto;
     height: 18px;
     font-size: 1.8rem;
     margin: 0%;
@@ -566,26 +600,18 @@ footer {
   }
 }
 
+.fab-wrap {
+  font-size: 22px;
+  display: flex;
+}
 @media screen and (max-width: 600px) {
   .fab-wrap {
     width: 13.6%;
-    display: flex;
   }
 }
 
-.fab {
-  font-size: 22px;
-  width: 22px;
-  height: 19px;
-  margin-top: 5px;
-  margin-right: 9px;
-}
-@media screen and (max-width: 600px) {
-  .fab {
-    width: 5.3%;
-    margin: 0%;
-    margin-right: auto;
-  }
+.fa-facebook-square {
+  margin-left: 9px;
 }
 
 .ft-btn {
@@ -596,8 +622,6 @@ footer {
   line-height: normal;
   background: none;
   font-family: Roboto Mono for Powerline;
-  position: absolute;
-  right: 8.8%;
 }
 @media screen and (max-width: 959px) {
   .ft-btn {
@@ -608,22 +632,7 @@ footer {
 @media screen and (max-width: 600px) {
   .ft-btn {
     min-width: 184px;
-    right: 0;
-    margin-top: -100px;
-    margin-right: 30%;
-  }
-}
-
-.ft-line {
-  display: inline-block;
-  content: "";
-  border-top: 1px solid #70707036;
-  width: 83%;
-  margin: 164px 8.3% 0;
-}
-@media screen and (max-width: 600px) {
-  .ft-line {
-    margin-top: 70px;
+    transform: translate(0, 60px);
   }
 }
 

@@ -22,10 +22,14 @@ $dark: #A1938689;
 }
 
 // 全体//
+.body-wrap {
+    overflow: hidden;
+}
+
 html {
     font-size: 62.5%;
-    max-width: 1282px;
     margin: 0 auto;
+    max-width: inherit;
 }
 
 .title {
@@ -38,6 +42,7 @@ html {
             font-size: 2.4rem;
             margin-top: 256px;
             margin-left: 107px;
+            margin-bottom: 11px;
             font-style: Roboto;
             font-weight: normal;
             display: flex;
