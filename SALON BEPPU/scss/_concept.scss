@@ -48,13 +48,13 @@
 
 .concept-mes {
     display: flex;
-    margin: 92px 14.3% 129px 14.3%;
+    margin: 92px 14.3% 86px 14.3%;
     justify-content: center;
     align-items: center;
     @include tab {
         margin: 0 auto;
         flex-direction: column;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 }
 
@@ -66,12 +66,12 @@
     color: #ffffff;
     font-family: ヒラギノ明朝 Pro;
     @include tab {
-        margin-bottom: revert;
+        margin-bottom: 20px;
     }
     @include sp {
         font-size: 18px;
         background-size: cover;
-        padding: 50px 88px 18px;
+        padding: 25px 88px 18px;
     }
 }
 
@@ -80,6 +80,7 @@
     color: #ffffff;
     font-family: ヒラギノ角ゴ Pro;
     width: 380px;
+    line-height: 1.5;
     @include sp {
         font-size: 16px;
         background-size: cover;
