@@ -1,5 +1,5 @@
 #concept {
-    background: linear-gradient(180deg,$light 0%,$light 50%, $dark 50%, $dark 100%);
+    background: linear-gradient(180deg,$light 0%,$light 407px, $dark 407px, $dark 100%);
     width: 100%;
     height: 967px;
     @include tab {
@@ -11,19 +11,25 @@
 #concept img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: 100%;
         @include sp {
             height: 205px;
-            object-fit: cover;
-            object-position: 100%;
         }
 }
 
 .concept-wrap {
     display: flex;
     margin: 0 8%;
+    height: 413px;
     @include tab {
+        height: 350px;
         margin: 0 auto;
-        padding-top: 50px;
+        padding: 50px 5% 0;
+    }
+    @include sp {
+        height: 205px;
+        box-sizing: content-box;
     }
 }
 
@@ -48,13 +54,16 @@
 
 .concept-mes {
     display: flex;
-    margin: 92px 14.3% 86px 14.3%;
+    margin: 69px 14.3% 64px 14.3%;
     justify-content: center;
     align-items: center;
     @include tab {
         margin: 0 auto;
         flex-direction: column;
         padding-top: 30px;
+    }
+    @include sp {
+        padding-top: 50px;
     }
 }
 
@@ -71,7 +80,7 @@
     @include sp {
         font-size: 18px;
         background-size: cover;
-        padding: 25px 88px 18px;
+        padding: 40px 88px 18px;
     }
 }
 
