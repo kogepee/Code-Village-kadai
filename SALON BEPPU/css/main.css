@@ -279,7 +279,7 @@ a:hover {
   top: 0%;
   left: 0%;
   z-index: 9999;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-color: #a19386;
   transition: .3s ease-in-out;
@@ -318,7 +318,24 @@ a:hover {
     color: white;
   }
 }
-.first-v .first-wrap {
+
+.first-img {
+  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-size: cover;
+  width: 54%;
+  height: 800px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+@media screen and (max-width: 959px) {
+  .first-img {
+    width: 100%;
+    height: 587px;
+    transform: translate(0px, 80px);
+  }
+}
+
+.first-wrap {
   position: absolute;
   text-align: center;
   top: 25%;
@@ -326,11 +343,10 @@ a:hover {
   transform: translate(-50%, 50%);
 }
 @media screen and (max-width: 959px) {
-  .first-v .first-wrap {
+  .first-wrap {
     width: 100%;
     height: 65%;
     transform: translate(-60%, 50%);
-    z-index: 10;
     text-align: center;
     flex-direction: column-reverse;
     transform: translate(-45%, 45%);
@@ -346,7 +362,6 @@ a:hover {
   .catch_one {
     font-size: 24px;
     transform: translate(0%, 70px);
-    z-index: 15;
   }
 }
 
@@ -360,22 +375,6 @@ a:hover {
     font-size: 28px;
     margin-top: 0;
     transform: translate(0px, -30px);
-  }
-}
-
-.first-img {
-  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
-  background-size: cover;
-  width: 54%;
-  height: 800px;
-  background-repeat: no-repeat;
-  margin-left: auto;
-}
-@media screen and (max-width: 959px) {
-  .first-img {
-    width: 100%;
-    height: 587px;
-    transform: translate(0px, 80px);
   }
 }
 

@@ -6,45 +6,6 @@
         height: 667px;;
         color: white;
     }
-    
-.first-wrap {
-        position: absolute;
-        text-align: center;
-        top: 25%;
-        left: 25%;
-        transform: translate(-50%, 50%);
-        @include tab {
-            width: 100%;
-            height: 65%;
-            transform: translate(-60%, 50%);
-            z-index: 10;
-            text-align: center;
-            flex-direction: column-reverse;
-            transform: translate(-45%, 45%);
-            margin-left: 20%;
-            }
-    }
-}
-
-.catch_one {
-    font-family: ヒラギノ明朝 Pro;
-    font-size: 3.8rem;
-    @include tab {
-        font-size: 24px;
-        transform: translate(0%, 70px);
-        z-index: 15;
-    }
-}
-
-.catch_two {
-    font-family: Zapfino;
-    font-size: 3.8rem;
-    margin-top: 7.8rem;
-    @include tab {
-        font-size: 28px;
-        margin-top: 0;
-        transform: translate(0px, -30px);
-    }
 }
 
 .first-img {
@@ -58,5 +19,42 @@
         width: 100%;
         height: 587px;
         transform: translate(0px, 80px);
+    }
+}
+
+.first-wrap {
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, 50%);
+        @include tab {
+            width: 100%;
+            height: 65%;
+            transform: translate(-60%, 50%);
+            text-align: center;
+            flex-direction: column-reverse;
+            transform: translate(-45%, 45%);
+            margin-left: 20%;
+            } 
+}
+
+.catch_one {
+    font-family: ヒラギノ明朝 Pro;
+    font-size: 3.8rem;
+    @include tab {
+        font-size: 24px;
+        transform: translate(0%, 70px);
+    }
+}
+
+.catch_two {
+    font-family: Zapfino;
+    font-size: 3.8rem;
+    margin-top: 7.8rem;
+    @include tab {
+        font-size: 28px;
+        margin-top: 0;
+        transform: translate(0px, -30px);
     }
 }
