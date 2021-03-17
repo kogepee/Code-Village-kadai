@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>電卓アプリ</title>
+</head>
+<body>
+    <div>Hellow World!</div>
+    <input type="text"><br>
+    <script>
+        function update(_v) //input tagを更新する関数
+        {
+            document.querySelector('input').value = _v
+        }
+
+        function append(_v)　　//数字ボタンが押されたので数字を後ろに追加する
+        {
+            document.querySelector('input').value += _v
+        }
+
+        function calc()
+        {
+        const v = document.querySelector('input').value
+        try {
+            const f = new Function (' return ' + v)
+            update( f().toString())
+        }   catch( _error ) {
+            update( _error)  //計算が失敗した場合、エラーの内容を表示する
+        }
+    }
+    </script>
+    <div>
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button><br>
+    </div>
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button><br>
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button><br>
+    <button onclick="append('0')">0</button>
+    <button onclick="append('.')">.</button>
+    <button onclick="append('+')">+</button><br>
+    <button onclick="append('-')">-</button>
+    <button onclick="append('*')">*</button>
+    <button onclick="append('/')">/</button><br>
+
+    <button onclick="calc()">=</button>
+
+    <button onclick="update('')">CLR</button>
+
+</body>
+</html>
