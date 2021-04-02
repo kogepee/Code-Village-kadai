@@ -10,7 +10,8 @@ const List = ({ todos, deleteTodo }) => {
                 <Item 
                   content={todo.content}
                   id={todo.id}
-                  key={todo.id} 
+                  key={todo.id}
+                  deleteTodo={deleteTodo}
                 />
               )
             })

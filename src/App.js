@@ -34,7 +34,7 @@ const App = () => {
     <>
       <h1>Hello World!</h1>
       <Form addTodo={addTodo} />
-      <List todos={todos}/>
+      <List todos={todos} deleteTodo={deleteTodo}/>
     </>
   )
 }
